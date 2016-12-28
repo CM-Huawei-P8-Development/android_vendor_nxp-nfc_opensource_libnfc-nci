@@ -3137,8 +3137,8 @@ if((p_rx_data[2])&&(config_access == TRUE))
     {
         if(p_rx_data[3]!=NFCSTATUS_SUCCESS)
         {
-            NXPLOG_NCIHAL_W("Invalid Data from config file . Aborting..");
-            phNxpNciHal_close();
+            NXPLOG_NCIHAL_W("Invalid Data from config file . Ignore..");
+            //phNxpNciHal_close();
         }
     }
 }
